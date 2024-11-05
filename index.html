@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="create-button" id="createBtn">Create</button>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" id="closeBtn">&times;</span>
+          <h2>Create New Entry</h2>
+          <form>
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Enter title"
+            />
+
+            <label for="pages">Pages</label>
+            <input
+              type="number"
+              id="pages"
+              name="pages"
+              placeholder="Enter number of pages"
+            />
+
+            <label for="author">Author</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Enter author name"
+            />
+
+            <label for="read">Read or Not</label>
+            <select id="read" name="read">
+              <option value="read">Read</option>
+              <option value="not-read">Not Read</option>
+            </select>
+
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
